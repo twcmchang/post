@@ -70,7 +70,3 @@ Expose your internal API externally, drastically simplifying **Python API**devel
 You can use type annotations that let _hug_ not only generate **documentation** for your API but also provide with **validation** and clean error messages that will make your life (and your API user’s) a lot easier. Hug is built on [Falcon’s](https://github.com/falconry/falcon) high performance HTTP library, which means you can deploy this to production using any wsgi-compatible server such as [gunicorn](http://gunicorn.org/).
 
 Follow the discussion of this post on: [Reddit](https://www.reddit.com/r/Python/comments/5jf64k/top_10_python_libraries_of_2016/)  
-
-----------------
-
-_Original source:_ [_https://tryolabs.com/blog/2016/12/20/top-10-python..._](https://tryolabs.com/blog/2016/12/20/top-10-python-libraries-of-2016/)
