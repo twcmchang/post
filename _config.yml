@@ -21,7 +21,6 @@ url: "https://twcmchang.github.io/post/"
 baseurl: ""
 paginate: 20
 per_page: 20
-paginate_path: "/page/"
 markdown: kramdown
 gems:
   - jekyll-paginate
