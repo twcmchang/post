@@ -1,0 +1,37 @@
+title: Stack Problems
+description: My Personal Stack Problems
+author: Chun-Ming Chang
+github: https://github.com/twcmchang
+about:
+disqus_shortname: stackproblems
+
+enableTags: false
+tagarray: []
+
+collections:
+  project:
+    output: false
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "#"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/chun-ming-chang"
+    - icon: fa-github
+      link: "https://github.com/twcmchang"
+
+url: "https://twcmchang.github.io/posts/"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
