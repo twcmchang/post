@@ -107,7 +107,7 @@ div.page-header {
 h1.project-name {
   color: #f7f7f7;
   margin-top: 2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
   @media screen and (min-width: 64em) {
     .project-name {
       font-size: 25px; } }
@@ -237,14 +237,14 @@ div.col-sm-3 img.profile-avatar {
 }
 
 /* Responsive Conditional */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
   .fixed-condition {
     position: fixed;
     max-width: 255px;
   }
-}
-@media (max-width: 768px) {
+}*/
+/*@media (max-width: 768px) {
   div.col-sm-3 {
     margin-top: 30px;
   }
-}
+}*/
