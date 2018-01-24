@@ -13,6 +13,7 @@ layout: compress
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
     <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
     <meta content="{{ site.title }}" property="og:site_name">
+  <body>
 
     {% if page.noindex %}
       <meta name="robots" content="noindex">
@@ -96,6 +97,7 @@ layout: compress
     <link rel="stylesheet" href="https://twcmchang.github.io/post/static/css/thickbox.css">
     <link rel="stylesheet" href="https://twcmchang.github.io/post/static/css/projects.css">
     <link rel="stylesheet" href="https://twcmchang.github.io/post/static/css/main.css">
+    <link rel="stylesheet" href="https://twcmchang.github.io/post/static/css/cayman.css">
 
     <!-- 
     <script>
@@ -109,11 +111,21 @@ layout: compress
     </script> -->
   </head>
   <body>
+
+    <section class="page-header">
+      <h1 class="project-name">Stack Posts/h1>
+      <h2 class="project-tagline">The chances favor the prepared mind.</h2>
+    </section>
+
     <div class="container">
-      <div class="col-sm-10 col-offset-1 main-layout">
+      <div class="col-sm-10 col-offset-3 main-layout">
         <img class="profile-avatar" src="{{ site.avatar_url }}" height="75px" width="75px" />
         <h1 class="author-name">{{ site.author }}</h1>
-        {{ content }}
+          {{ content }}
+
+          <a href="https://github.com/twcmchang/MLDS_final_2017" class="btn">View on GitHub</a>
+          <a href="https://github.com/twcmchang/MLDS_final_2017/archive/master.zip" class="btn">Download .zip</a>
+          <a href="https://twcmchang.github.io/online-cv/" class="btn">See my CV here</a>
         <footer>
           &copy; {{ site.author }}
           {% if site.github %}
