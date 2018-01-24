@@ -8,11 +8,6 @@ disqus_shortname: stackproblems
 enableTags: false
 tagarray: []
 
-collections:
-  project:
-    output: false
-    permalink: /project/:path/
-
 social:
     - icon: fa-facebook
       link: "#"
