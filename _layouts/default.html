@@ -113,23 +113,19 @@ layout: compress
   <body>
     <center>
     <div class="page-header">
-      <h1 class="project-name" style="color:#f7f7f7">Stack Posts</h1>
+      <img class="profile-avatar" src="{{ site.avatar_url }}" height="75px" width="75px" style="margin-top:3rem"/>
+      <h1 class="project-name" style="color:#f7f7f7">{{ site.author }}</h1>
       <h2 class="project-tagline" style="color:#f7f7f7">The chances favor the prepared mind.</h2>
-      <img class="profile-avatar" src="{{ site.avatar_url }}" height="75px" width="75px" />
-      <h1 class="project-name">{{ site.author }}</h1>
     </div>
     </center>
 
-    <div class="container" style="width:80%">
+    <div class="container" style="width:65%">
       <div class="main-layout">
-        <center>
-            <h1 class="project-name">Stack Posts</h1>
-        </center>
           {{ content }}
-
-          <a href="https://github.com/twcmchang/MLDS_final_2017" class="btn">View on GitHub</a>
-          <a href="https://github.com/twcmchang/MLDS_final_2017/archive/master.zip" class="btn">Download .zip</a>
-          <a href="https://twcmchang.github.io/online-cv/" class="btn">See my CV here</a>
+          <center>
+          <a href="https://twcmchang.github.io/post/" class="btn">Back to Post</a>
+          <a href="https://twcmchang.github.io/online-cv/" class="btn">See my CV</a>
+          </center>
         <footer>
           &copy; {{ site.author }}
           {% if site.github %}
