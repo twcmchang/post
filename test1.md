@@ -5,7 +5,11 @@ date:   2016-06-11 03:39:03 +0700
 categories: [post]
 ---
 
+$D_{KL}$
+
 Find the number of even digits in the given integer.
+
+$$D_{KL}$$
 
 **Example**
 
