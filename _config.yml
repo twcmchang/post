@@ -22,6 +22,9 @@ baseurl: ""
 paginate: 20
 per_page: 20
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 gems:
   - jekyll-paginate
   - jekyll-gist
