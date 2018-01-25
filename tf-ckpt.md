@@ -5,14 +5,12 @@ date:   2018-01-13 20:50:00 +0800
 categories: [post]
 ---
 
-`tf.train.Saver()` is commonly used to save model checkpoints. We usually care about the final performance but today if you would like to evaluate performances at **each** checkpoint, how would you do?
 
-# tf.train.get_checkpoint_state() 
+It is common that uses `tf.train.Saver()` to save model checkpoints and `tf.train.get_checkpoint_state()` to restore the saved states. Mostly We only care about the final performance but today if you would like to evaluate performances at **each** checkpoint, how would you do?
 
-## Evaluating every checkpoints
+### tf.train.get_checkpoint_state('model_directory') 
 
-**all_model_checkpoint_paths**
-- return a list, which orders all checkpoints from the oldest to the latest
+#### all_model_checkpoint_paths: return a list, which orders all checkpoints from the oldest to the latest
 
 ```python
 with tf.Session() as sess:
@@ -28,10 +26,7 @@ with tf.Session() as sess:
 			"""
 ```
 
-## Evaluating the last checkpoint
-
-**model_checkpoint_path**
-- return the latest checkpoints
+#### model_checkpoint_path: return the latest checkpoints
 
 ```python
 with tf.Session() as sess:
