@@ -5,11 +5,14 @@ date:   2018-01-13 20:50:00 +0800
 categories: [post]
 ---
 
+ 
 
-It is common that uses [tf.train.Saver()](https://www.tensorflow.org/api_docs/python/tf/train/Saver) to save model checkpoints and [tf.train.get_checkpoint_state()](https://www.tensorflow.org/api_docs/python/tf/train/get_checkpoint_state) to restore the saved states. Mostly We only care about the final performance but today if you would like to evaluate performances at **each** checkpoint, how would you do?
+It is common that uses [tf.train.Saver()](https://www.tensorflow.org/api_docs/python/tf/train/Saver) to save model checkpoints and [tf.train.get_checkpoint_state()](https://www.tensorflow.org/api_docs/python/tf/train/get_checkpoint_state) to restore the saved states. Normally we only care about the final performance, but if you would like to evaluate performances at **each** checkpoint, how would you do?
+
+Here we demonstrate how to do performance evaluation in TensorFlow: (1) evaluate at every checkpoint and (2) evaluate at the latest checkpoint
 
 
-**all_model_checkpoint_paths**: return a list, which orders all checkpoints from the oldest to the latest
+(1) **all_model_checkpoint_paths**: return a list, which orders all checkpoints from the oldest to the latest
 
 ```python
 with tf.Session() as sess:
@@ -25,7 +28,7 @@ with tf.Session() as sess:
 			"""
 ```
 
-**model_checkpoint_path**: return the latest checkpoints
+(2) **model_checkpoint_path**: return the latest checkpoint
 
 ```python
 with tf.Session() as sess:
