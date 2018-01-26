@@ -10,7 +10,9 @@ It is common that uses [tf.train.Saver()](https://www.tensorflow.org/api_docs/py
 
 Here we demonstrate how to do performance evaluation in TensorFlow: (1) evaluate at every checkpoint and (2) evaluate at the latest checkpoint.
 
-- Tensorflow version: 1.4.0
+- TensorFlow version: 1.4.0
+
+=============
 
 (1) **all_model_checkpoint_paths**: return a list, which orders all checkpoints from the oldest to the latest
 
@@ -27,6 +29,8 @@ with tf.Session() as sess:
 			# run your evaluation steps here, i.e.
 			# sess.run([accuracy], feed_dict={model.x: Xtest, model.y: Ytest})
 ```
+
+=============
 
 The following is an example for most cases, evaluating model at the latest checkpoint.
 
@@ -45,7 +49,7 @@ with tf.Session() as sess:
 		# sess.run([accuracy], feed_dict={model.x: Xtest, model.y: Ytest})
 ```
 
-It is trivial, right? But such information is difficult to find in either Tensorflow documentation or other forums due to the frequent updates of TensorFlow.
+It is trivial, right? But such information is difficult to find in either TensorFlow documentation or other forums due to the frequent updates of TensorFlow.
 
 Hope this article is helpful for you!
 
