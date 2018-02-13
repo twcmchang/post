@@ -21,7 +21,7 @@ categories: [post]
 		- completely random: 和其他 feature 無關
 		- not random: 被其他 features 影響，如：男生不愛填身高、年收入
 
-3. feature extraction from data
+3. Feature extraction from data
 	- feature transformation, e.g. take log transformation to have linear relationship with output
 	- define granularity
 		- time series data => in day, week, month
@@ -30,4 +30,28 @@ categories: [post]
 		- total expense/number of transaction = avg. expense
 	- demographic data
 
-4.
+4. When apply PCA or other dimension reduction techniques?
+	- reduce correlation between variables (because components in PCA are indpendent)
+	- reduce model complexities and variable redundacy
+	- extract informative variables
+
+5. Pros and Cons of PCA:
+	- (O) transform the original variables to the linear combination of these variables (which are independent)
+	- (X) lose the explaining ability of the original variables
+
+6. Other dimension reduction method:
+	- Lasso: L1 norm on variables to make sparse coefficients
+	- T-sne: QQ i dont know the details
+
+7. Why we need clustering?
+	- Find out hidden similarity/patterns in data points
+	- Discovering possible partition of data points
+
+	- Clustering highly depends on how we define 
+	- Usually a very first step to analyze your data if there is no labels
+
+8. Things we should know before clustering
+	- the range of each variable (in most case, we should normalize each feature independently)
+	- the definition of distance function
+	- 
+
