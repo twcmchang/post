@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Common questions in data analysis"
+date:   2018-02-13 00:50:00 +0800
+categories: [post]
+---
+
+1. What's the problem in interest?
+	- Supervised: regression, classification (binary, multi-class)
+	- Unsupervised: clustering
+
+2. What kinds of data we have?
+	- the meaning of rows, cols
+	- check the distribution and response with output
+		- categorical: box plot (maybe with entropy)
+		- numerical: scatter plot (with correlation)
+	- extreme values
+		- aggregate into a dummy value, e.g. "age < 12"
+		- aggregate several small groups together, e.g. "ASIAN", "ASIAN/TAILAND" => "OTHER"
+	- missing values
+		- completely random: 和其他 feature 無關
+		- not random: 被其他 features 影響，如：男生不愛填身高、年收入
+
+3. feature extraction from data
+	- feature transformation, e.g. take log transformation to have linear relationship with output
+	- define granularity
+		- time series data => in day, week, month
+		- spatial data => a unit of area
+	- interaction among features, e.g. addition, subtraction, multiplication, division
+		- total expense/number of transaction = avg. expense
+	- demographic data
+
+4.
