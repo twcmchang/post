@@ -18,16 +18,16 @@ Here we demonstrate how to do performance evaluation in TensorFlow: (1) evaluate
 
 ```python
 with tf.Session() as sess:
-  sess.run(tf.global_variables_initializer())
-  ckpt = tf.train.get_checkpoint_state(save_dir)
-  if ckpt and ckpt.model_checkpoint_path:
-    saver = tf.train.Saver()
-    for checkpoint in ckpt.all_model_checkpoint_paths:
-      saver.restore(sess, checkpoint)
-      sess.run(tf.global_variables())
+    sess.run(tf.global_variables_initializer())
+    ckpt = tf.train.get_checkpoint_state(save_dir)
+    if ckpt and ckpt.model_checkpoint_path:
+        saver = tf.train.Saver()
+        for checkpoint in ckpt.all_model_checkpoint_paths:
+            saver.restore(sess, checkpoint)
+            sess.run(tf.global_variables())
 
-      # run your evaluation steps here, i.e.
-      # sess.run([accuracy], feed_dict={model.x: Xtest, model.y: Ytest})
+            # run your evaluation steps here, i.e.
+            # sess.run([accuracy], feed_dict={model.x: Xtest, model.y: Ytest})
 ```
 
 =============
@@ -38,15 +38,15 @@ The following is an example for most cases, evaluating model at the latest check
 
 ```python
 with tf.Session() as sess:
-  sess.run(tf.global_variables_initializer())
-  saver = tf.train.Saver()
-  ckpt = tf.train.get_checkpoint_state(save_dir)
-  if ckpt and ckpt.model_checkpoint_path:
-    saver.restore(sess, ckpt.model_checkpoint_path)
-    sess.run(tf.global_variables())
+    sess.run(tf.global_variables_initializer())
+    saver = tf.train.Saver()
+    ckpt = tf.train.get_checkpoint_state(save_dir)
+    if ckpt and ckpt.model_checkpoint_path:
+        saver.restore(sess, ckpt.model_checkpoint_path)
+        sess.run(tf.global_variables())
 
-    # run your evaluation steps here, i.e.
-    # sess.run([accuracy], feed_dict={model.x: Xtest, model.y: Ytest})
+        # run your evaluation steps here, i.e.
+        # sess.run([accuracy], feed_dict={model.x: Xtest, model.y: Ytest})
 ```
 
 It is trivial, right? But such information is difficult to find in either TensorFlow documentation or other forums due to the frequent updates of TensorFlow.
