@@ -12,6 +12,15 @@ layout: default
     {% endfor %}
   </ol>
 
+  <h1>Talks</h1>
+  <hr/>
+
+  <ol class="posts">
+    {% for post in site.data.news %}
+      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+    {% endfor %}
+  </ol>
+
   <!-- Pagination links -->
  <!--  {% if paginator.total_pages > 1 %}
     <ul class="pagination pagination-sm">
