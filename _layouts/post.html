@@ -12,6 +12,10 @@ layout: default
   </span>
 {% endif %} -->
 
+{% if post.display %}
+  <img src="{{post.display}}" width="90%"></img>
+{% endif%}
+
 <div class="content">
   <div class="post">{{ content }}</div>
 </div>
