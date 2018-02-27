@@ -12,7 +12,7 @@ Even though batch normalization (BN) is regarded as the necessary component in m
 
 *score(15)=originality(5)+reproducibility(5)+quality(5) with bonus of novelty(2)
 
-##I. Motivation
+## I. Motivation
 
 <p>Batch normalization is to accelerate network training by reducing internal covariate shift. <strong>Internal covariate shift</strong> is the change in the distribution of network activations due to the change in network parameters during training. By whitening the inputs to each layer, we would fix the input distributions and help remove the ill effects of the internal covariate shift.</p>
 
@@ -25,11 +25,11 @@ Even though batch normalization (BN) is regarded as the necessary component in m
 </blockquote>
 <p>Even though batch normalization (BN) is regarded as the necessary component in many well-known network architectures, but the question that why batch normalization works so well still remains mysterious. This work aims at investigating the possible reasons or explanation in both theoretical and experimental viewpoints.</p>
 
-##II. Experimental Study
+## II. Experimental Study
 
 <p>We conduct experiments on MNIST using a fully connected neural network with 3 layers.</p>
 
-###A. Mythbusters of Batch Normalization
+### A. Mythbusters of Batch Normalization
 <p>Here we focus on validating the effects of batch normalization, and the author made the following claims in the original paper:
 </p>
 <blockquote>
@@ -48,7 +48,7 @@ Even though batch normalization (BN) is regarded as the necessary component in m
 <img src="images/bn_l1_relu.gif" style="width:48%;" loop="100">
 <img src="images/bn_l2_sigmoid.gif" style="width:48%;" loop="100">
 
-###B. Which factors is the most influential to BN?
+### B. Which factors is the most influential to BN?
 
 <blockquote>
 <p>Activation functions: relu, lrelu, sigmoid, softplus, tanh</p>
@@ -65,7 +65,7 @@ Even though batch normalization (BN) is regarded as the necessary component in m
 
 <p><img src="images/bn_exp123.png" alt="" data-canonical-src="images/bn_exp123.png" style="max-width:100%;"></p>
 
-##III. Conclusions
+## III. Conclusions
 <ol>
 <li> We have experimentally showed the facts
 <ul> 
