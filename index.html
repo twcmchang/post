@@ -12,6 +12,15 @@ layout: default
     {% endfor %}
   </ol>
 
+  <h3>Projects</h3>
+  <hr/>
+
+  <ol class="posts">
+    {% for post in site.data.project %}
+      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+    {% endfor %}
+  </ol>
+
   <h3>Talks</h3>
   <hr/>
 
