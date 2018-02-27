@@ -20,9 +20,6 @@ for example, a parameter vecotr which yields robustness = 0.19 can be optimized 
 ### Scenario 3: given a parameter vector, only one parameter is tuneable
 for example, a parameter vecotr which yields robustness = 0.19 can be optimized to yield robustness = 0.32 by only lowering Km of v4, because v4 is the most crucial reaction where its Km is the most important and has negative effect to robustness.
 
-## Presentation Slides
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/qqzysWM3i1q9HE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/using-machine-learning-in-metabolic-system-analysis-explanation-and-prediction" title="Using Machine Learning in Metabolic System Analysis: Explanation and Prediction" target="_blank">Using Machine Learning in Metabolic System Analysis: Explanation and Prediction</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
-
 ## Dataset and Definition of Robustness
 ### Dataset
 - Our dataset is simuldated by [Metabolic Engineering and Synthetic Biology Laboratory](http://www.seas.ucla.edu/liao_lab/team.html) lead by Prof. James C. Liao, UCLA (currently the President of Academia Sinica since 2017).
@@ -83,10 +80,6 @@ We compare 3 models with different sets of features:
 2. add 652 intra-reaction interactions into the model of 1
 3. add 4,640 inter-reaction interactions into the model of 2
 
-|	  | Model 1 (86)| Model 2 (738)| Model 3 (5,378)|
-| --- | ------ | ------ | ------ |
-| AUC | 0.7013 | 0.7924 | 0.7940 |
-
 <img src="../images/msa_performance.png" style="width:100%;">
 
 Note that we also apply deep neural networks for more accurate predictive modeling and achieve correlation coefficient up to 0.88. Our goal, however, is to interpret the results from machine learning model but DNN is less suitable to further analyze the relations between input features and output responses.
@@ -106,3 +99,7 @@ However, at relatively high substrate concentrations, the reaction rate asymptot
 - The substrate concentration midway between these two limiting cases is denoted by **Km**.
 - The theoretical maximum reaction rate is denoted by **Vmax**.
 - The intrinsic turnover rate is denoted by **Kcat**.
+
+## Presentation Slides
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/qqzysWM3i1q9HE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/using-machine-learning-in-metabolic-system-analysis-explanation-and-prediction" title="Using Machine Learning in Metabolic System Analysis: Explanation and Prediction" target="_blank">Using Machine Learning in Metabolic System Analysis: Explanation and Prediction</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
+

@@ -66,7 +66,6 @@ categories: [post]
 <li>with BN, activation function is more crucial than optimizer</li>
 </ul>
 </li>
-<br>
 <li> We have verified the following claims
 <ul>
 <li> regularize the weights to reduce overfitting</li>
@@ -74,9 +73,8 @@ categories: [post]
 <li> benefit gradient flow through network to accelerate training process</li>
 </ul>
 </li>
-<br>
 <li> By analyzing the distribution of singular values of layer's Jacobian, we show that BN is beneficial to keep better isometry while error backpropagtes through the network
-</li><br>
+</li>
 <li> We investigate the conditions that BN worsens performance:
 <ul>
 <li> too small batch size </li>
@@ -89,7 +87,7 @@ But fortunately, the above issues can be solved by Batch Re-Nomalization (BRN)
 <p><a href="https://github.com/twcmchang/MLDS_final_2017">Github repository</a></p>
 
 ## Presentation Slides
-<br>
+
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/GDTNdQPxwOQ02I" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/why-batch-normalization-works-so-well" title="Why Batch Normalization Works so Well" target="_blank">Why Batch Normalization Works so Well</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
 
 ## References

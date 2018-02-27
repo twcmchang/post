@@ -11,9 +11,6 @@ This work proposes a novel 3D convolutional neural network to help detect early-
 - We demonstrate the effectiveness of predicting chronological age over a dataset of 558 healthy individuals with MAE = 4.29, Correlation = 0.95 and R squared = 0.91.
 - Despite that our dataset is smaller (N = 558) and the image resolution is lower (96 x 96 x 66) but our 3D CNN model still outperforms the result of James et. al. (2016) which uses 2001 subjects and the image resolution is up to 182 x 182 x 218.
 
-## Presentation Slides
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/k3K3FWj3gj2cCN" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/detecting-earlystage-neurodegeneration-using-3d-convnet" title="Detecting early-stage neurodegeneration using 3D ConvNet " target="_blank">Detecting early-stage neurodegeneration using 3D ConvNet </a> </strong> from <strong><a href="//www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
-
 ## Dataset
 - Our dataset is provided by NTU Hospital
 - Total number of subjects is 558 and the subjects' age range from 16 to 88
@@ -39,12 +36,6 @@ We compare 3 models with different sets of features:
 2. 3D CNN proposed by [James H Cole et. al.](https://arxiv.org/abs/1607.08022)
 3. 2D CNN proposed by [Tzu-Wei Huang et. al.](http://www.cs.nthu.edu.tw/~htchen/aemri/aemri.pdf)
 
-|	    |  Conv  |   MAE   | Correlation  | R squared |
-| ----- | ------ | ------  | ------------ | --------- |
-| Our   |   3D   |   4.29  |  **0.96**    | **0.92**  | 
-| James |   3D   |   4.65  |     0.94     |    0.88   | 
-| Huang |   2D   | **4.0** | Not reported | Not reported| 
-
 <img src="../images/mri_performance.png" style="width:100%;">
 
 ## Conclusions
@@ -54,3 +45,5 @@ We compare 3 models with different sets of features:
 - The trained model can be used to detect early-stage neurodegeneration, and the severity of neurodegeneration can be quantified as the difference between chronological age and brain-predicted age
 - Two current limitations: (1) limited number of subjects and (2) relatively low image resolution
 
+## Presentation Slides
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/k3K3FWj3gj2cCN" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/detecting-earlystage-neurodegeneration-using-3d-convnet" title="Detecting early-stage neurodegeneration using 3D ConvNet " target="_blank">Detecting early-stage neurodegeneration using 3D ConvNet </a> </strong> from <strong><a href="//www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
