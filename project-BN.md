@@ -4,16 +4,8 @@ date: 2017-07-01
 display: '../images/bn_singular.png'
 categories: [post]
 ---
-
-Even though batch normalization (BN) is regarded as the necessary component in many well-known network architectures, but the question that why batch normalization works so well still remains mysterious. This work aims at investigating the possible reasons or explanation in both theoretical and experimental viewpoints.
-- The **1st** place in peer reviews (base score: 14.6/15, bonus: 1.6/2, total: 16.2/17)
-- The **2nd** place in the oral presentation voted by audience
-- Github repository >> [https://github.com/twcmchang/MLDS_final_2017](https://github.com/twcmchang/MLDS_final_2017)
-
-*score(15)=originality(5)+reproducibility(5)+quality(5) with bonus of novelty(2)
-
-## I. Motivation
-
+## I. Motivation 
+<br>
 <p>Batch normalization is to accelerate network training by reducing internal covariate shift. <strong>Internal covariate shift</strong> is the change in the distribution of network activations due to the change in network parameters during training. By whitening the inputs to each layer, we would fix the input distributions and help remove the ill effects of the internal covariate shift.</p>
 
 <p>But whitening each layer’s inputs is costly and not everywhere differentiable, so batch normalization made two necessary simplifications:</p>
@@ -26,7 +18,7 @@ Even though batch normalization (BN) is regarded as the necessary component in m
 <p>Even though batch normalization (BN) is regarded as the necessary component in many well-known network architectures, but the question that why batch normalization works so well still remains mysterious. This work aims at investigating the possible reasons or explanation in both theoretical and experimental viewpoints.</p>
 
 ## II. Experimental Study
-
+<br>
 <p>We conduct experiments on MNIST using a fully connected neural network with 3 layers.</p>
 
 ### A. Mythbusters of Batch Normalization
@@ -65,7 +57,8 @@ Even though batch normalization (BN) is regarded as the necessary component in m
 
 <p><img src="images/bn_exp123.png" alt="" data-canonical-src="images/bn_exp123.png" style="max-width:100%;"></p>
 
-## III. Conclusions
+<h2 style=""> III. Conclusions <h2>
+<br>
 <ol>
 <li> We have experimentally showed the facts
 <ul> 
@@ -93,7 +86,9 @@ But fortunately, the above issues can be solved by Batch Re-Nomalization (BRN)
 </li>
 </ol>
 
-##References
+- Github repository >> [https://github.com/twcmchang/MLDS_final_2017](https://github.com/twcmchang/MLDS_final_2017)
+
+## References
 <ol style="font-size: 0.5rem">
 <li>Ioffe, Sergey, Szegedy, Christian. Batch normalization: Accelerating deep network training by reducing internal covariate shift. arXiv preprint arXiv:1502.03167, 2015.</li>
 
@@ -122,6 +117,7 @@ But fortunately, the above issues can be solved by Batch Re-Nomalization (BRN)
 
 
 ## Presentation Slides
+<br>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/GDTNdQPxwOQ02I" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/why-batch-normalization-works-so-well" title="Why Batch Normalization Works so Well" target="_blank">Why Batch Normalization Works so Well</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
 
 
