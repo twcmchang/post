@@ -86,7 +86,11 @@ But fortunately, the above issues can be solved by Batch Re-Nomalization (BRN)
 </li>
 </ol>
 
-<p><a href="https://github.com/twcmchang/MLDS_final_2017">Github repository</a>
+<p><a href="https://github.com/twcmchang/MLDS_final_2017">Github repository</a></p>
+
+## Presentation Slides
+<br>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GDTNdQPxwOQ02I" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/why-batch-normalization-works-so-well" title="Why Batch Normalization Works so Well" target="_blank">Why Batch Normalization Works so Well</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
 
 ## References
 <ol style="font-size: 0.5rem">
@@ -114,12 +118,6 @@ But fortunately, the above issues can be solved by Batch Re-Nomalization (BRN)
 
 <li>R2RT Implementing Batch Normalization in Tensorflow: https://r2rt.com/implementing-batch-normalization-in-tensorflow.html</li>
 </ol>
-
-
-## Presentation Slides
-<br>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/GDTNdQPxwOQ02I" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser950871/why-batch-normalization-works-so-well" title="Why Batch Normalization Works so Well" target="_blank">Why Batch Normalization Works so Well</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser950871" target="_blank">Chun-Ming Chang</a></strong> </div>
-
 
 <!-- ## Motivation: Why Needs Batch Normalization?
 Batch normalization is to accelerate network training by reducing internal covariate shift. **Internal covariate shift** is the change in the distribution of network activations due to the change in network parameters during training. By whitening the inputs to each layer, we would take a step towards achieving the fixed distributions of inputs that would remove the ill effects of the internal covariate shift.
