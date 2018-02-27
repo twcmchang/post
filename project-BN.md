@@ -4,8 +4,9 @@ date: 2017-07-01
 display: '../images/bn_singular.png'
 categories: [post]
 ---
-## I. Motivation 
-<br>
+
+## I. Motivation
+
 <p>Batch normalization is to accelerate network training by reducing internal covariate shift. <strong>Internal covariate shift</strong> is the change in the distribution of network activations due to the change in network parameters during training. By whitening the inputs to each layer, we would fix the input distributions and help remove the ill effects of the internal covariate shift.</p>
 
 <p>But whitening each layer’s inputs is costly and not everywhere differentiable, so batch normalization made two necessary simplifications:</p>
@@ -18,7 +19,7 @@ categories: [post]
 <p>Even though batch normalization (BN) is regarded as the necessary component in many well-known network architectures, but the question that why batch normalization works so well still remains mysterious. This work aims at investigating the possible reasons or explanation in both theoretical and experimental viewpoints.</p>
 
 ## II. Experimental Study
-<br>
+
 <p>We conduct experiments on MNIST using a fully connected neural network with 3 layers.</p>
 
 ### A. Mythbusters of Batch Normalization
@@ -57,8 +58,7 @@ categories: [post]
 
 <p><img src="images/bn_exp123.png" alt="" data-canonical-src="images/bn_exp123.png" style="max-width:100%;"></p>
 
-<h2 style=""> III. Conclusions <h2>
-<br>
+## III. Conclusions
 <ol>
 <li> We have experimentally showed the facts
 <ul> 
@@ -86,7 +86,7 @@ But fortunately, the above issues can be solved by Batch Re-Nomalization (BRN)
 </li>
 </ol>
 
-- Github repository >> [https://github.com/twcmchang/MLDS_final_2017](https://github.com/twcmchang/MLDS_final_2017)
+<p><a href="https://github.com/twcmchang/MLDS_final_2017">Github repository</a>
 
 ## References
 <ol style="font-size: 0.5rem">
