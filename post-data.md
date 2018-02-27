@@ -18,8 +18,8 @@ categories: [post]
 		- aggregate into a dummy value, e.g. "age < 12"
 		- aggregate several small groups together, e.g. "ASIAN", "ASIAN/TAILAND" => "OTHER"
 	- missing values
-		- completely random: 和其他 feature 無關
-		- not random: 被其他 features 影響，如：男生不愛填身高、年收入
+		- completely random
+		- not random
 
 3. Feature extraction from data
 	- feature transformation, e.g. take log transformation to have linear relationship with output
@@ -52,5 +52,4 @@ categories: [post]
 8. Things we should know before clustering
 	- the range of each variable (in most case, we should normalize each feature independently)
 	- the definition of distance function
-	- 
 

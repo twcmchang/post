@@ -6,12 +6,6 @@ layout: default
   <h3>{{ site.title }}</h3>
   <hr/>
 
-  <ol class="posts">
-    {% for post in site.data.post %}
-      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
-    {% endfor %}
-  </ol>
-
   <h3>Projects</h3>
   <hr/>
 
@@ -26,6 +20,15 @@ layout: default
 
   <ol class="posts">
     {% for post in site.data.talk %}
+      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+    {% endfor %}
+  </ol>
+
+  <h3>Posts</h3>
+  <hr/>
+
+  <ol class="posts">
+    {% for post in site.data.post %}
       <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
     {% endfor %}
   </ol>
