@@ -20,12 +20,12 @@ for example, a parameter vecotr which yields robustness = 0.19 can be optimized 
 ### Scenario 3: given a parameter vector, only one parameter is tuneable
 for example, a parameter vecotr which yields robustness = 0.19 can be optimized to yield robustness = 0.32 by only lowering Km of v4, because v4 is the most crucial reaction where its Km is the most important and has negative effect to robustness.
 
-## Dataset and Definition of Robustness
-### Dataset
+## I. Dataset and Definition of Robustness
+### A. Dataset
 - Our dataset is simuldated by [Metabolic Engineering and Synthetic Biology Laboratory](http://www.seas.ucla.edu/liao_lab/team.html) lead by Prof. James C. Liao, UCLA (currently the President of Academia Sinica since 2017).
 - There are 86 tunable parameters in this pathway and total 116,911 simulated models.
 
-### Definition of Robustness
+### B. Definition of Robustness
 A "robust" metabolic pathways: if a setting of system parameters can meet the [Michaelis–Menten kinetics](https://en.wikipedia.org/wiki/Michaelis%E2%80%93Menten_kinetics) and reach steady-state concentrations of all substrates, the parameter setting is one of the feasible solutions of this pathway.
 
 We quantify the **enzyme-wise robustness as the tolerance for individual enzyme perturbations**. For one enzyme, we estimate three terms below.
@@ -38,7 +38,7 @@ We quantify the **enzyme-wise robustness as the tolerance for individual enzyme 
 <img src="images/msa_pathway.png" style="width:48%;">
 <img src="images/msa_def_robustness.png" style="width:48%;">
 
-## Methodology
+## II. Methodology
 - Here we apply random forests (RF) method, a boostrap aggregating on decision tree.
 - RF can calculate feature importances by summing up information gains from every split, and can capture non-linear relationships between input and output variables.
 - Correlation test is used to identify that a parameter has positive or negative effect to system robustness. 
@@ -46,7 +46,7 @@ We quantify the **enzyme-wise robustness as the tolerance for individual enzyme 
 	- if correlation coefficient smaller than 0 significantly, then negative
 	- otherwise, no significant effect
 
-## Result on Basic 86 Features
+## III. Result on Basic 86 Features
 - Fig.1. depicts that several reactions are recognized as bottleneck in the experimental pathway and there are some common characteristics of these bottleneck reactions:
 	1. usually accompany with other side reactions like the conversion of ATP to ADP or reduction of NAD+ to NADH, e.g. v12(rank 2), v9(rank 3), v16(rank 5).
 	2. usually belong to multiple-substrate mechanisms, e.g. v4(rank 1), v2(rank 4).
@@ -55,7 +55,7 @@ We quantify the **enzyme-wise robustness as the tolerance for individual enzyme 
 
 <img src="images/msa_basics.png" style="width:100%;">
 
-## Interactions among reactions
+## IV. Interactions among reactions
 We formulate the interactions among reactions in operations of addition, substraction, multiplicaiton, and division. All kinds of interactions are categorized into two types: intra-reaction and inter-reaction.
 
 - **Intra-reaction**: create features by parameters in same reaction. For example, v4's Km multiplies v4's Vmax.
@@ -74,7 +74,7 @@ In addition, we would like to compare among different operations of +,-,\*,/ and
 
 Even though we are not experts in metabolic systems, based on our analysis, we can still extract hidden relations among parameters and figure out which factors influence metabolic systems most.
 
-## Prediction Performance
+## V. Prediction Performance
 We compare 3 models with different sets of features:
 1. use 86 basic features
 2. add 652 intra-reaction interactions into the model of 1
@@ -84,7 +84,7 @@ We compare 3 models with different sets of features:
 
 Note that we also apply deep neural networks for more accurate predictive modeling and achieve correlation coefficient up to 0.88. Our goal, however, is to interpret the results from machine learning model but DNN is less suitable to further analyze the relations between input features and output responses.
 
-## Conclusions
+## VI. Conclusions
 - This work analyzes the influence of enzyme kinects to the robustness of metabolic pathways by machine learning techniques. We can recognize bottleneck reactions and identify reactions to be either positive or negative to system robustness by the correlation test. Also, our results provide insights on how to effectively and efficiently adjust system parameters to make the metabolic system robust.
 - This work can be regarded as a pilot project that analyzes metabolic pathways in view of machine learning researchers.
 - This work is collaborated with [Metabolic Engineering and Synthetic Biology Laboratory](http://www.seas.ucla.edu/liao_lab/team.html]) lead by Prof. James C. Liao, UCLA.
