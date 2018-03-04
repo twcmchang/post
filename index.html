@@ -14,20 +14,20 @@ layout: default
   <center><h2>Talks</h2></center>
   <hr/>
 
-  <ol class="posts">
+  <ul class="posts">
     {% for post in site.data.talk %}
       <li><i><span>{{ post.date | date_to_string }}</span></i>&emsp;<a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ol>
+  </ul>
 
-  <h3>Posts</h3>
+  <center><h2>Posts</h2></center>
   <hr/>
 
-  <ol class="posts">
+  <ul class="posts">
     {% for post in site.data.post %}
-      <li><i><span>{{ post.date | date_to_string }}</span></i>&emsp;<a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+      <li><i><span style="width:20%">{{ post.date | date_to_string }}</span></i>&emsp;<span style="width:80%"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></span></li>
     {% endfor %}
-  </ol>
+  </ul>
 
   <!-- Pagination links -->
  <!--  {% if paginator.total_pages > 1 %}
