@@ -15,7 +15,7 @@ This work proposes a novel 3D convolutional neural network to help detect early-
 - Our dataset is provided by NTU Hospital
 - Total number of subjects is 558 and the subjects' age range from 16 to 88
 
-### Preprocessing
+## Preprocessing
 - Diffusion tensor images (DTI) is reconstructed by python package, "dipy"
 	- DTI (Diffusion Tensor Image): FA, MD, AD, RD, color FA
 	- DKI (Diffusion Kurtosis Image): FA, MD, AD, RD, color FA
