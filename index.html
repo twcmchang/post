@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-<center>
 <div id="home">
   <h3>Projects</h3>
   <hr/>
 
   <ol class="posts">
     {% for post in site.data.project %}
-      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+      <li><i><span>{{ post.date | date_to_string }}</span></i><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ol>
 
@@ -17,7 +16,7 @@ layout: default
 
   <ol class="posts">
     {% for post in site.data.talk %}
-      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+      <li><i><span>{{ post.date | date_to_string }}</span></i><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ol>
 
@@ -26,7 +25,7 @@ layout: default
 
   <ol class="posts">
     {% for post in site.data.post %}
-      <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+      <li><i><span>{{ post.date | date_to_string }}</span></i><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ol>
 
@@ -61,4 +60,3 @@ layout: default
     </ul>
   {% endif %} -->
 </div><!-- end #home -->
-</center>
