@@ -1,7 +1,7 @@
 ---
 title: "Why Batch Normalization Works so Well?"
 date: 2017-07-01
-display: '../images/bn_singular.png'
+display: 'images/bn_singular.png'
 categories: [post]
 ---
 
@@ -134,13 +134,13 @@ Fig.1. implies that BN does limit the growth of magnitude of weights over traini
 ### BN solves the gradient vanishing problem
 Fig.2. shows that in use of **Sigmoid, with BN**, the average magnitude of gradients of the first hidden layer holds up to 0.1 (the case of **Sigmoid, without BN** is 0.02). 
 
-<img src="../images/bn_exp456.png" style="width:100%;">
+<img src="images/bn_exp456.png" style="width:100%;">
 
 ### BN benefits gradient flows through network
 We restore the distribution of singular values of layer's Jacobian in every training steps. According to the following GIF(s), we found that BN helps shift the distribution of **singular values of layer's Jacobian** closer to one, and this keeps good **isometry** when error propagates through the network.
 
-<img src="../images/bn_l1_relu.gif" style="width:48%;" loop="100">
-<img src="../images/bn_l2_sigmoid.gif" style="width:48%;" loop="100">
+<img src="images/bn_l1_relu.gif" style="width:48%;" loop="100">
+<img src="images/bn_l2_sigmoid.gif" style="width:48%;" loop="100">
 
 ## Which the following factors affect the effect of BN most?
 

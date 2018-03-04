@@ -2,7 +2,7 @@
 layout: post
 title: "Detecting Early-stage Neurodegeneration using 3D Convolutional Neural Networks"
 date:   2017-12-16 00:50:00 +0800
-display: "../images/logo_mri.png"
+display: "images/logo_mri.png"
 categories: [post]
 ---
 
@@ -22,7 +22,7 @@ This work proposes a novel 3D convolutional neural network to help detect early-
 - Two denoising techiques are used to reduce the noise effect, **gaussian denoising** and **non-local means (nlmeans)**
 - After our extensive experiments, the model trained by **FA and MD DTI images** provides the best results
 
-<img src="../images/mri_data_example.png" style="width:100%;">
+<img src="images/mri_data_example.png" style="width:100%;">
 
 ## 3D Convolutional Neural Network
 - Deeper bottleneck architecture in a convolutional block ([ref](https://arxiv.org/abs/1512.03385))
@@ -36,7 +36,7 @@ We compare 3 models with different sets of features:
 2. 3D CNN proposed by [James H Cole et. al.](https://arxiv.org/abs/1607.08022)
 3. 2D CNN proposed by [Tzu-Wei Huang et. al.](http://www.cs.nthu.edu.tw/~htchen/aemri/aemri.pdf)
 
-<img src="../images/mri_performance.png" style="width:100%;">
+<img src="images/mri_performance.png" style="width:100%;">
 
 ## Conclusions
 - The proposed 3D convolutional neural network, which applies on diffusion tensor images, can accurately predict ages of healthy subjects (MAE=4.29)

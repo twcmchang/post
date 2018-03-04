@@ -35,8 +35,8 @@ We quantify the **enzyme-wise robustness as the tolerance for individual enzyme 
 - **System-wise robustness** = summation of each enzyme-wise robustness
 - Note that **(1)** Enz_up and Enz_down are estimated by simulation and **(2)** The enzyme perturbation is done by overexpression from 1 to 10 folds and knockdown from 1 to 0.1 fold
 
-<img src="../images/msa_pathway.png" style="width:48%;">
-<img src="../images/msa_def_robustness.png" style="width:48%;">
+<img src="images/msa_pathway.png" style="width:48%;">
+<img src="images/msa_def_robustness.png" style="width:48%;">
 
 ## Methodology
 - Here we apply random forests (RF) method, a boostrap aggregating on decision tree.
@@ -53,7 +53,7 @@ We quantify the **enzyme-wise robustness as the tolerance for individual enzyme 
 - Fig.2. shows the importance by each feature class in every reaction. It's worth to mention that reactions with other side reactions usually have negative effect to robustness, but most multiple-substrate reactions have positive effect to robustness.
 - Fig.3. visualizes in view of feature classes. Km is the most important class and this finding is counterintuitive to the metabolic system researchers. But in our further study, adjusting Km seems the most cost-effective to robustness.
 
-<img src="../images/msa_basics.png" style="width:100%;">
+<img src="images/msa_basics.png" style="width:100%;">
 
 ## Interactions among reactions
 We formulate the interactions among reactions in operations of addition, substraction, multiplicaiton, and division. All kinds of interactions are categorized into two types: intra-reaction and inter-reaction.
@@ -61,7 +61,7 @@ We formulate the interactions among reactions in operations of addition, substra
 - **Intra-reaction**: create features by parameters in same reaction. For example, v4's Km multiplies v4's Vmax.
 - **Inter-reaction**: create features by parameters among different reactions. For example, v4's Km divides v5's Km.
 
-<img src="../images/msa_interactions.png" style="width:100%;">
+<img src="images/msa_interactions.png" style="width:100%;">
 
 
 Here we identified reactions to be either positive or negative to system robustness by the correlation test, and we made some observations from Fig.4.
@@ -80,7 +80,7 @@ We compare 3 models with different sets of features:
 2. add 652 intra-reaction interactions into the model of 1
 3. add 4,640 inter-reaction interactions into the model of 2
 
-<img src="../images/msa_performance.png" style="width:100%;">
+<img src="images/msa_performance.png" style="width:100%;">
 
 Note that we also apply deep neural networks for more accurate predictive modeling and achieve correlation coefficient up to 0.88. Our goal, however, is to interpret the results from machine learning model but DNN is less suitable to further analyze the relations between input features and output responses.
 
