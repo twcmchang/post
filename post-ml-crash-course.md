@@ -5,9 +5,8 @@ date:   2018-03-04 00:50:00 +0800
 categories: [post]
 ---
 
-# Machine Learning Crash Course
-
 ## What is a machine learning model?
+<hr>
 - *ML systems* learn how to combine input to produce useful predictions on never-before-seen data
 
 - *Models* defines the relationship between input (feature) and output (label)
@@ -17,7 +16,7 @@ categories: [post]
 - In supervised learning, a machine learning algorithm builds a model by examining many examples and attempting to find a model that minimizes loss; this process is called *empirical risk minimization*
 
 ## Optimization: gradient descent
-
+<hr>
 - Iterative approach: a Machine Learning model is trained by starting with an initial guess for the weights and bias and iteratively adjusting those guesses until learning the weights and bias with the lowest possible loss
 
 - The popular *gradient descent* algorithm takes a step in the direction of the negative gradient in order to reduce loss as quickly as possible, until edging ever close to the minimum
@@ -36,6 +35,7 @@ categories: [post]
 [LinearRegressor exercise in TensorFlow](https://colab.research.google.com/notebooks/mlcc/first_steps_with_tensor_flow.ipynb?hl=en-US)
 
 ## Is There a Standard Heuristic for Model Tuning?
+<hr>
 - This is a commonly asked question. The short answer is that the effects of different hyperparameters are data dependent. So there are no hard-and-fast rules; you'll need to test on your data.
 - That said, here are a few rules of thumb that may help guide you:
 	- Training error should steadily decrease, steeply at first, and should eventually plateau as training converges.
@@ -48,7 +48,7 @@ categories: [post]
 - Again, never go strictly by these rules of thumb, because the effects are data dependent. Always experiment and verify.
 
 ## Generalization
-
+<hr>
 ### Occam's razor
 The less complex an ML model, the more likely that a good empirical result is not just due to the peculiarities of the sample.
 
