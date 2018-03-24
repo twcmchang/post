@@ -24,6 +24,16 @@ layout: default
   {% endfor %}
 
 
+  <center><h2>Slides</h2></center>
+  <hr/>
+
+  {% for post in site.data.slide %}
+    <div style="width:100%">
+    <p style="width:80%; text-align:left; display: inline-block"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></p>
+    <div style="width:20%; text-align:right; display: inline-block">{{ post.date | date_to_string }}</div>
+    </div>
+  {% endfor %}
+
   <center><h2>Posts</h2></center>
   <hr/>
 

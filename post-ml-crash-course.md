@@ -8,10 +8,12 @@ categories: [post]
 ## What is a machine learning model?
 <hr>
 - *ML systems* learn how to combine input to produce useful predictions on never-before-seen data
+	- reconstruct the relationship between input and output via data and learning algorithms
 
 - *Models* defines the relationship between input (feature) and output (label)
 	- *Training* means creating or learning the model. That is, you show the model labeled example and enable the model to gradually learn the relationship between features and labels
 	- *Inference* means applying the trained model to unlabeled examples
+	- Can be randomized mapping because features (X) may not have enough information to predict label (y) perfectly
 
 - In supervised learning, a machine learning algorithm builds a model by examining many examples and attempting to find a model that minimizes loss; this process is called *empirical risk minimization*
 
